@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<ArrayOfTaskConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TaskConfig>
+    <TaskKey>ft-51</TaskKey>
+    <IsTomcat>True</IsTomcat>
+    <TaskDescription>XXX生产环境WEB服务器1</TaskDescription>
+
+    <Host>47.96.19.100</Host>
+    <Port>2122</Port>
+    <Username>deloy_user</Username>
+    <Password>sjaiuwjsd</Password>
+
+    <LocalPublishedDirectory>F:\xxx\projects\eye\src\99.eye-web-main\target\eye-web</LocalPublishedDirectory>
+    
+    <ServerDeployDirectory>/xxx/wwws/www.anydom.com</ServerDeployDirectory>
+    <ServerBackupDirectory>/xxx/_backups/www.anydom.com</ServerBackupDirectory>
+    <ServerTempDirectory>/xxx/_temp-uploading/www.anydom.com</ServerTempDirectory>
+    <ServerTomcatBinDirectory>/home/yls001/tomcat/anydom/bin</ServerTomcatBinDirectory>
+    
+    <!--逗号分隔，如果KeepingJarPrefix为空则保留所有jar-->
+    <KeepingJarPrefixes>anydom,eye</KeepingJarPrefixes>
+    <RequiredDirectories>modules</RequiredDirectories>
+  </TaskConfig>
+  <TaskConfig>
+    <TaskKey>ft-52</TaskKey>
+    <IsTomcat>True</IsTomcat>
+    <TaskDescription>XXX生产环境WEB服务器2</TaskDescription>
+
+    <Host>47.96.19.100</Host>
+    <Port>2222</Port>
+    <Username>deloy_user</Username>
+    <Password>sjaiuwjsd</Password>
+
+    <LocalPublishedDirectory>F:\xxx\projects\eye\src\99.eye-web-main\target\eye-web</LocalPublishedDirectory>
+
+    <ServerDeployDirectory>/xxx/wwws/www.anydom.com</ServerDeployDirectory>
+    <ServerBackupDirectory>/xxx/_backups/www.anydom.com</ServerBackupDirectory>
+    <ServerTempDirectory>/xxx/_temp-uploading/www.anydom.com</ServerTempDirectory>
+    <ServerTomcatBinDirectory>/home/yls001/tomcat/anydom/bin</ServerTomcatBinDirectory>
+
+    <!--逗号分隔，如果KeepingJarPrefix为空则保留所有jar-->
+    <KeepingJarPrefixes>anydom,eye</KeepingJarPrefixes>
+    <RequiredDirectories>modules</RequiredDirectories>
+  </TaskConfig>
+</ArrayOfTaskConfig>
